@@ -1,3 +1,3 @@
 @echo off
 
-call emacs win32_handmade.cpp
+call C:\Users\admin\Downloads\bin\runemacs win32_handmade.cpp
