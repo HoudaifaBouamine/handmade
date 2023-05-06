@@ -1,0 +1,139 @@
+
+--------------------
+--<< Note [001] >>--------------------------------------------------------------------
+--------------------
+
+<-> Links :
+-----------
+https://www.youtube.com/watch?v=4ROiWonnWGk&list=PLnuhp3Xd9PYTt6svyQPyRO_AAuMWGxPzU&index=13
+https://learn.microsoft.com/en-us/windows/win32/api/winuser/ns-winuser-wndclassa
+----------
+
+// Title :  WNDCLASS sturct : window class(struct) :
+----------------------------------------------------
+
+
+typedef struct tagWNDCLASSA {
+  UINT      style;
+  WNDPROC   lpfnWndProc;
+  int       cbClsExtra;
+  int       cbWndExtra;
+  HINSTANCE hInstance;
+  HICON     hIcon;
+  HCURSOR   hCursor;
+  HBRUSH    hbrBackground;
+  LPCSTR    lpszMenuName;
+  LPCSTR    lpszClassName;
+} WNDCLASSA, *PWNDCLASSA, *NPWNDCLASSA, *LPWNDCLASSA;
+
+
+On c++ when we declare struct (ex : stExample)
+then we try to defined struct from it we can write : 'stExample example'
+but on c we can't use the struct's name only,
+so we have to write : 'struct stExample example'
+
+windows headers try to support both c and c++ so they used this solution :
+
+use 'typedef' to defined new type that can be used by both c and c++
+so 'struct tagWNDCLASS' is the real type name and 'WNDCLASS' is only another name
+for 'struct tagWNDCLASS' , also '*PWNDCLASS' is a pointer to 'tagWNDCLASS'
+
+
+
+->remarek : we can delete 'tagWNDCLASS' :
+						
+typedef {
+  UINT      style;
+  WNDPROC   lpfnWndProc;
+  int       cbClsExtra;
+  int       cbWndExtra;
+  HINSTANCE hInstance;
+  HICON     hIcon;
+  HCURSOR   hCursor;
+  HBRUSH    hbrBackground;
+  LPCSTR    lpszMenuName;
+  LPCSTR    lpszClassName;
+} WNDCLASSA, *PWNDCLASSA, *NPWNDCLASSA, *LPWNDCLASSA;
+
+------------------
+--<< Note End >>---------------------------------------------------------------------
+------------------
+
+====================================================================================
+
+--------------------
+--<< Note [002] >>-------------------------------------------------------------------
+--------------------
+
+<-> Links :
+-----------
+
+----------
+
+// Title : 
+-------------------------------------------
+
+
+------------------
+--<< Note End >>---------------------------------------------------------------------
+------------------
+
+
+====================================================================================
+
+--------------------
+--<< Note [003] >>-------------------------------------------------------------------
+--------------------
+
+<-> Links :
+-----------
+
+----------
+
+// Title : 
+-------------------------------------------
+
+
+------------------
+--<< Note End >>---------------------------------------------------------------------
+------------------
+
+====================================================================================
+
+--------------------
+--<< Note [004] >>-------------------------------------------------------------------
+--------------------
+
+<-> Links :
+-----------
+
+----------
+
+// Title : 
+-------------------------------------------
+
+
+------------------
+--<< Note End >>---------------------------------------------------------------------
+------------------
+
+====================================================================================
+
+--------------------
+--<< Note [005] >>-------------------------------------------------------------------
+--------------------
+
+<-> Links :
+-----------
+
+----------
+
+// Title : 
+-------------------------------------------
+
+
+------------------
+--<< Note End >>---------------------------------------------------------------------
+------------------
+
+====================================================================================
